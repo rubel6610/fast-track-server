@@ -6,7 +6,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const admin = require("firebase-admin");
 const stripe = require("stripe")(process.env.PAYMENT_SECRET_KEY);
 
-const serviceAccount = require("./firebase_admin_key.json");
+const serviceAccount = require("./fbKey.json");
 
 // Initialize Firebase Admin SDK
 admin.initializeApp({
